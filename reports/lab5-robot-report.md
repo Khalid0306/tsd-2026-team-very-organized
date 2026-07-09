@@ -4,26 +4,29 @@
 https://github.com/Khalid0306/tsd-2026-team-very-organized
 
 ## Test cases
-
-| ID | Description | Type | Résultat |
+| ID | Description | Type | Result |
 |---|---|---|---|
-| TC-001 | Login with valid credentials should succeed | Positif | PASS / FAIL |
-| TC-NEG-001 | Login with wrong password should show error | Négatif | PASS / FAIL |
+| TC-001 | Login with valid credentials should succeed | Positive | PASS |
+| TC-NEG-001 | Login with wrong password should show an error | Negative | PASS |
 
 ## Custom keywords (>= 2)
-- `Open Browser To Login Page` : ouvre Chrome sur `/login` et vérifie le titre de la page
-- `Submit Login Form` : saisit email + password et clique sur "Log in"
+- `Open Browser To Login Page` — opens Chrome on `/login` and checks the page title.
+- `Submit Login Form` — parameterised keyword: types email + password and clicks "Log in".
 
-## Variables utilisées
-- `${BASE_URL}`, `${BROWSER}`, `${EMAIL}`, `${PASSWORD}`, `${VALID_SEARCH}`
+## Variables used
+`${BASE_URL}`, `${BROWSER}`, `${EMAIL}`, `${PASSWORD}`, `${VALID_SEARCH}`.
 
 ## HTML report / log
-- `reports/report.html`
-- `reports/log.html`
+`reports/report.html` and `reports/log.html` (regenerated on the last run).
 
-## Résultats
-> Colle ici un screenshot du résultat dans le terminal (X tests, X passed, X failed)
-> et un screenshot de reports/report.html.
+## Results
+2 tests, 2 passed, 0 failed.
 
-## Problèmes rencontrés
-...
+## Problems encountered
+The positive login test requires the shared account (`docs/test-plan.md`, section 6) to
+be registered on Demo Web Shop; before that, it failed with "Page should have contained
+'Log out' but did not". After registering the account and re-running, both tests pass.
+The negative test needs no account.
+
+## How to run
+`robot --outputdir reports automation/robot/`

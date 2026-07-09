@@ -41,17 +41,21 @@ Manual, functional, UI, negative/validation, and light regression (re-run of cor
 | Tools | Browser DevTools for evidence; screenshots stored with the defect reports |
 | Test date | 2026-07-09 |
 
-## 6. Shared test account  (create this first)
-> Selenium (Lab 4) and Robot (Lab 5) MUST reuse this same account so results stay comparable. It is created by executing **TC-001 (Register)**.
+## 6. Shared test account  (register this first)
+
+Selenium (Lab 4) and Robot (Lab 5) positive tests log in with the **same** account,
+so it must be registered on the site once before running them.
 
 | Field | Value |
 |---|---|
-| Email | teamveryorganized.tsd2026@example.com |
-| Password | Secret123 |
-| Created on | 2026-07-09 |
-| Created by | TeamVeryOrganized |
+| Email | emilienhuret@gmail.com |
+| Password | fortnite1234 |
+| Registered on | Demo Web Shop (/register) |
 
-> Register this account once on the site (execute TC-001) so Selenium (Lab 4) and Robot (Lab 5) can reuse it.
+> Action: open https://demowebshop.tricentis.com/register and create this exact
+> account (no email confirmation is required on this demo site), then run the UI
+> tests. Without it, the positive login tests fail with "not logged in".
+
 
 ## 7. Test design techniques used (>= 3)
 - [x] **Equivalence partitioning** — valid vs invalid email formats (registration, newsletter); existing vs new email.
