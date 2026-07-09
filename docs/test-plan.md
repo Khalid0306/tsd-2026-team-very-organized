@@ -11,9 +11,9 @@ Out of scope: real payments, admin, performance.
 
 ## 3. SHARED TEST ACCOUNT  (a creer en tout premier)
 > Selenium (C) et Robot (D) DOIVENT utiliser ce meme compte.
-- Email: ____________________
-- Password: ________________
-- Cree le: ____  par: ____
+- Email: emilienhuret@gmail.com
+- Password: fortnite1234
+- Cree le: 09/07  par: Emilien
 
 ## 4. Test design techniques used (>= 3)
 - [ ] Equivalence partitioning
