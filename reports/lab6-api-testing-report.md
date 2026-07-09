@@ -13,4 +13,4 @@ File: automation/postman/team-very-organized-apitests.postman_collection.json
 | 4 | GET | /users/999999 | negative | error status |
 
 ## Collection Runner result
-> Screenshot of the runner summary (X passed / Y failed).
+![alt text](image.png)
