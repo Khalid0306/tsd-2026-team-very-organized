@@ -27,7 +27,7 @@ TC-001 Login With Valid Credentials Should Succeed
     [Documentation]    Positif : connexion avec un compte valide -> acces au compte utilisateur.
     Open Browser To Login Page
     Submit Login Form    ${EMAIL}    ${PASSWORD}
-    Page Should Contain    Log out
+    Wait Until Page Contains    Log out    timeout=5s
 
 TC-NEG-001 Login With Wrong Password Should Show Error
     [Documentation]    Negatif : mauvais mot de passe -> message d'erreur affiche.

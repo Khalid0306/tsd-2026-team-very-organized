@@ -1,137 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.3 on linux)" generated="2026-07-09T14:36:54.619917" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot" source="/home/emilien/Bureau/ProjetSelenium/tsd-2026-team-very-organized/automation/robot">
-<suite id="s1-s1" name="Demo Web Shop" source="/home/emilien/Bureau/ProjetSelenium/tsd-2026-team-very-organized/automation/robot/demo_web_shop.robot">
+<robot generator="Robot 7.4.2 (Python 3.13.14 on win32)" generated="2026-07-09T16:18:41.140147" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="C:\Users\simon\Documents\SK Tools FInal\tsd-2026-team-very-organized\automation\robot">
+<suite id="s1-s1" name="Demo Web Shop" source="C:\Users\simon\Documents\SK Tools FInal\tsd-2026-team-very-organized\automation\robot\demo_web_shop.robot">
 <test id="s1-s1-t1" name="TC-001 Login With Valid Credentials Should Succeed" line="26">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:36:54.757333" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<msg time="2026-07-09T16:18:41.358498" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
 <arg>${BASE_URL}/login</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-07-09T14:36:54.756999" elapsed="10.755762"/>
+<status status="PASS" start="2026-07-09T16:18:41.358293" elapsed="1.421391"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-07-09T14:37:05.513141" elapsed="0.016334"/>
+<status status="PASS" start="2026-07-09T16:18:42.779908" elapsed="0.024741"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:05.536341" level="INFO">Page title is 'Demo Web Shop. Login'.</msg>
+<msg time="2026-07-09T16:18:42.809201" level="INFO">Page title is 'Demo Web Shop. Login'.</msg>
 <arg>Demo Web Shop. Login</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2026-07-09T14:37:05.529837" elapsed="0.006705"/>
+<status status="PASS" start="2026-07-09T16:18:42.804840" elapsed="0.004463"/>
 </kw>
-<status status="PASS" start="2026-07-09T14:36:54.756304" elapsed="10.780430"/>
+<status status="PASS" start="2026-07-09T16:18:41.357803" elapsed="1.451603"/>
 </kw>
 <kw name="Submit Login Form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:05.539477" level="INFO">Typing text 'emilienhuret@gmail.com' into text field 'id=Email'.</msg>
+<msg time="2026-07-09T16:18:42.810874" level="INFO">Typing text 'emilienhuret@gmail.com' into text field 'id=Email'.</msg>
 <arg>id=Email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:05.538151" elapsed="0.097766"/>
+<status status="PASS" start="2026-07-09T16:18:42.810271" elapsed="0.098566"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:05.636682" level="INFO">Typing password into text field 'id=Password'.</msg>
-<msg time="2026-07-09T14:37:05.670446" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-07-09T16:18:42.909360" level="INFO">Typing password into text field 'id=Password'.</msg>
+<msg time="2026-07-09T16:18:42.933953" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=Password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:05.636262" elapsed="0.094058"/>
+<status status="PASS" start="2026-07-09T16:18:42.909038" elapsed="0.064505"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:05.730809" level="INFO">Clicking button 'css=input[value="Log in"]'.</msg>
+<msg time="2026-07-09T16:18:42.973948" level="INFO">Clicking button 'css=input[value="Log in"]'.</msg>
 <arg>css=input[value="Log in"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:05.730545" elapsed="0.450717"/>
+<status status="PASS" start="2026-07-09T16:18:42.973741" elapsed="0.055165"/>
 </kw>
 <arg>${EMAIL}</arg>
 <arg>${PASSWORD}</arg>
-<status status="PASS" start="2026-07-09T14:37:05.537134" elapsed="0.644369"/>
+<status status="PASS" start="2026-07-09T16:18:42.809872" elapsed="0.219151"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:06.915599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-07-09T14:37:06.915906" level="FAIL">Page should have contained text 'Log out' but did not.</msg>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Log out</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-07-09T14:37:06.181785" elapsed="0.735869">Page should have contained text 'Log out' but did not.</status>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-07-09T16:18:43.029364" elapsed="0.617142"/>
 </kw>
 <doc>Positif : connexion avec un compte valide -&gt; acces au compte utilisateur.</doc>
-<status status="FAIL" start="2026-07-09T14:36:54.755722" elapsed="12.162242">Page should have contained text 'Log out' but did not.</status>
+<status status="PASS" start="2026-07-09T16:18:41.357153" elapsed="2.289747"/>
 </test>
 <test id="s1-s1-t2" name="TC-NEG-001 Login With Wrong Password Should Show Error" line="32">
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:06.919369" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<msg time="2026-07-09T16:18:43.648612" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
 <arg>${BASE_URL}/login</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-07-09T14:37:06.919112" elapsed="1.000733"/>
+<status status="PASS" start="2026-07-09T16:18:43.648320" elapsed="1.630520"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-07-09T14:37:07.920034" elapsed="0.013783"/>
+<status status="PASS" start="2026-07-09T16:18:45.279073" elapsed="0.023147"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:07.936573" level="INFO">Page title is 'Demo Web Shop. Login'.</msg>
+<msg time="2026-07-09T16:18:45.310255" level="INFO">Page title is 'Demo Web Shop. Login'.</msg>
 <arg>Demo Web Shop. Login</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2026-07-09T14:37:07.933956" elapsed="0.002714"/>
+<status status="PASS" start="2026-07-09T16:18:45.302521" elapsed="0.007873"/>
 </kw>
-<status status="PASS" start="2026-07-09T14:37:06.918807" elapsed="1.017962"/>
+<status status="PASS" start="2026-07-09T16:18:43.647941" elapsed="1.662588"/>
 </kw>
 <kw name="Submit Login Form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:07.937608" level="INFO">Typing text 'emilienhuret@gmail.com' into text field 'id=Email'.</msg>
+<msg time="2026-07-09T16:18:45.311950" level="INFO">Typing text 'emilienhuret@gmail.com' into text field 'id=Email'.</msg>
 <arg>id=Email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:07.937335" elapsed="0.054261"/>
+<status status="PASS" start="2026-07-09T16:18:45.311665" elapsed="0.132659"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:07.992038" level="INFO">Typing password into text field 'id=Password'.</msg>
-<msg time="2026-07-09T14:37:08.014547" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-07-09T16:18:45.445066" level="INFO">Typing password into text field 'id=Password'.</msg>
+<msg time="2026-07-09T16:18:45.522206" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=Password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:07.991748" elapsed="0.059974"/>
+<status status="PASS" start="2026-07-09T16:18:45.444607" elapsed="0.165086"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:08.052053" level="INFO">Clicking button 'css=input[value="Log in"]'.</msg>
+<msg time="2026-07-09T16:18:45.610601" level="INFO">Clicking button 'css=input[value="Log in"]'.</msg>
 <arg>css=input[value="Log in"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-07-09T14:37:08.051890" elapsed="0.352040"/>
+<status status="PASS" start="2026-07-09T16:18:45.610022" elapsed="0.219867"/>
 </kw>
 <arg>${EMAIL}</arg>
 <arg>wrong-password-intentional</arg>
-<status status="PASS" start="2026-07-09T14:37:07.937001" elapsed="0.467034"/>
+<status status="PASS" start="2026-07-09T16:18:45.311267" elapsed="0.518870"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-07-09T14:37:08.433068" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<msg time="2026-07-09T16:18:45.876582" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
 <arg>Login was unsuccessful</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-07-09T14:37:08.404175" elapsed="0.029015"/>
+<status status="PASS" start="2026-07-09T16:18:45.830525" elapsed="0.046224"/>
 </kw>
 <doc>Negatif : mauvais mot de passe -&gt; message d'erreur affiche.</doc>
-<status status="PASS" start="2026-07-09T14:37:06.918259" elapsed="1.515159"/>
+<status status="PASS" start="2026-07-09T16:18:43.647401" elapsed="2.229908"/>
 </test>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-07-09T14:37:08.433880" elapsed="0.120843"/>
+<status status="PASS" start="2026-07-09T16:18:45.878504" elapsed="4.374630"/>
 </kw>
-<status status="FAIL" start="2026-07-09T14:36:54.636575" elapsed="13.918212"/>
+<status status="PASS" start="2026-07-09T16:18:41.166499" elapsed="9.086776"/>
 </suite>
-<status status="FAIL" start="2026-07-09T14:36:54.620447" elapsed="13.934720"/>
+<status status="PASS" start="2026-07-09T16:18:41.141342" elapsed="9.144055"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot" id="s1" pass="1" fail="1" skip="0">Robot</stat>
-<stat name="Demo Web Shop" id="s1-s1" pass="1" fail="1" skip="0">Robot.Demo Web Shop</stat>
+<stat name="Robot" id="s1" pass="2" fail="0" skip="0">Robot</stat>
+<stat name="Demo Web Shop" id="s1-s1" pass="2" fail="0" skip="0">Robot.Demo Web Shop</stat>
 </suite>
 </statistics>
 <errors>
