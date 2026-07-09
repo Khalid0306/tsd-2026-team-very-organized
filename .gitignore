@@ -1,0 +1,7 @@
+target/
+.idea/
+.vscode/
+*.class
+*.iml
+node_modules/
+newman/
