@@ -13,12 +13,12 @@ Team name: **TeamVeryOrganized**
 ## Labs & owners
 | Lab | Owner | Deliverable |
 |---|---|---|
-| Lab 2 - JUnit | A | `unit-tests/` (Rating + RatingTest, own pom), `unit-tests/COVERAGE_NOTES.md`, `docs/project-selection.md`, `reports/lab2-unit-testing.md` |
-| Lab 3 - Test design | B | `docs/test-plan.md`, `manual-tests/manual-test-cases.md` |
-| Lab 4 - Selenium | C | `src/test/java/DemoWebShopUITest.java`, `automation/selenium/`, `reports/lab4-selenium-report.md` |
-| Lab 5 - Robot | D | `automation/robot/demo_web_shop.robot`, `reports/lab5-robot-report.md` |
-| Lab 6 - Postman | E | `automation/postman/team-very-organized-apitests.postman_collection.json`, `reports/lab6-api-testing-report.md` |
-| Repo + coordination | F | structure, `reports/final-report.md`, presentation |
+| Lab 2 - JUnit | Simon | `unit-tests/` (Rating + RatingTest, own pom), `unit-tests/COVERAGE_NOTES.md`, `docs/project-selection.md`, `reports/lab2-unit-testing.md` |
+| Lab 3 - Test design | Antoine | `docs/test-plan.md`, `manual-tests/manual-test-cases.md` |
+| Lab 4 - Selenium | Louis | `src/test/java/DemoWebShopUITest.java`, `automation/selenium/`, `reports/lab4-selenium-report.md` |
+| Lab 5 - Robot | Emilien | `automation/robot/demo_web_shop.robot`, `reports/lab5-robot-report.md` |
+| Lab 6 - Postman | Lucca | `automation/postman/team-very-organized-apitests.postman_collection.json`, `reports/lab6-api-testing-report.md` |
+| Repo + coordination | Khalid | structure, `reports/final-report.md`, presentation |
 
 ## Repository structure
 ```
